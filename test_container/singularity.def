@@ -1,0 +1,12 @@
+Bootstrap: docker
+From: debian:stable-slim
+
+%post
+  mkdir /input
+  mkdir /output
+  mkdir /imaging
+  exit 0
+
+%runscript
+  echo "Hello World"
+  echo "Arguments: $@"
